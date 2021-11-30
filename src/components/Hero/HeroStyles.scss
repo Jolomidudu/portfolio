@@ -1,0 +1,151 @@
+.Section {
+  display: grid;
+  flex-direction: row, column;
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 16px 16px 0;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+}
+
+.SectionTitle {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(243, 199, 133, 0.76) 60.15%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding: 58px 0 16px 0;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    padding: 40px 0 12px 0;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 30px;
+    line-height: 35px;
+    float: right;
+    margin-bottom: 8px;
+    padding: 16px 0 8px 0;
+    max-width: 100%;
+  }
+}
+
+.LeftSection {
+  width: 100%;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 86%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.LogCard {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 400px;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.imgi {
+  width: 150px;
+  height: 198px;
+  float: right;
+  box-shadow: 8px #fff;
+  border-radius: 25px;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 150px;
+    height: 198px;
+    box-shadow: 8px #fff;
+    border-radius: 25px;
+  }
+}
+
+.Papa {
+  display: flex;
+  background-color: none;
+  margin-bottom: 30px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    background-color: none;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    background-color: none;
+  }
+}
+
+.Pikin {
+  background-color: rgba(38, 40, 36, 0.9);
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 0;
+  color: white;
+  text-align: center;
+  padding: 10px 32px 10px 32px;
+  font-size: 20px;
+  border: 1px solid #fff;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 8px;
+    font-size: 16px;
+  }
+}

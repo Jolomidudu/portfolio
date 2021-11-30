@@ -1,0 +1,1054 @@
+@import "./variables.scss";
+
+* {
+  font-family: $Poppins;
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+body {
+  background: $ig;
+  top: 0px;
+}
+
+.HeaderSocials {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    align-items: center;
+
+    margin-right: 20%;
+    text-align: center;
+  }
+}
+
+.Section {
+  display: grid;
+  flex-direction: row, column;
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 16px 16px 5px;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+}
+
+.SectionTitle {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(243, 199, 133, 0.76) 60.15%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding: 58px 0 16px 0;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    padding: 40px 0 12px 0;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 30px;
+    line-height: 35px;
+    float: right;
+    margin-bottom: 8px;
+    padding: 16px 0 8px 0;
+    max-width: 100%;
+  }
+}
+
+.LeftSection {
+  width: 100%;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 86%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.LogCard {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 400px;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.imgi {
+  width: 150px;
+  height: 198px;
+  float: right;
+  box-shadow: 8px #fff;
+  border: 2px solid rgba(248, 213, 161, 0.9);
+  border-radius: 25px;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 150px;
+    height: 198px;
+    box-shadow: 8px #fff;
+    border-radius: 25px;
+  }
+}
+
+.Papa {
+  display: flex;
+  background-color: none;
+  margin-bottom: 30px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    background-color: none;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    background-color: none;
+  }
+}
+
+.Pikin {
+  background-color: rgba(38, 40, 36, 0.4);
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 0 20px 20px 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 32px 10px 32px;
+  font-size: 20px;
+  border: 2px solid rgba(248, 213, 161, 0.9);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+.Sectiona {
+  display: grid;
+  flex-direction: row, column;
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 16px 16px 0;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+}
+
+.SectionaTitle {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(243, 199, 133, 0.76) 60.15%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding: 58px 0 16px 0;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    padding: 40px 0 12px 0;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 30px;
+    line-height: 35px;
+    float: right;
+    margin-bottom: 8px;
+    padding: 16px 0 8px 0;
+    max-width: 100%;
+  }
+}
+
+.Boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 24px 0 40px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    gap: 16px;
+    margin: 20px 0 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 450px;
+    margin: 24px auto;
+  }
+}
+
+.Box {
+  background: transparent;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  margin-bottom: 40px;
+  padding: 5px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    height: 135px;
+    padding: 16px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    height: 200px;
+    padding: 5px;
+    width: 100%;
+
+    :nth-child(2n) {
+      grid-row: 2 2;
+    }
+  }
+}
+
+.Box img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    height: 40%;
+    padding: 0px;
+    border-radius: 10px;
+
+    :nth-child(2n) {
+      grid-row: 2, 2;
+    }
+  }
+}
+
+.TitleContent {
+  text-align: center;
+  z-index: 20;
+  width: 25%;
+}
+
+.HeaderThree {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  padding: 0.5rem 0;
+  font-size: 15px;
+}
+
+.ProjectLinks {
+  color: rgba(248, 213, 161, 0.9);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  padding: 2px 4px;
+  background: #232322;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+/////////////////////////////////Services///////////////////////////////////////////////
+
+.SectionDivider {
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  background: linear-gradient(270deg, #f46737 0%, #945dd6 100%);
+}
+
+.SectionText {
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  padding-bottom: 3.6rem;
+  color: rgba(255, 255, 255, 0.9);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 16px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.List {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 3rem 0;
+
+  $breakpoint-lg: 1024px;
+  @media (max-width: $breakpoint-lg) {
+    margin: 64px 0;
+  }
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    margin: 64px 0;
+    gap: 24px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+  }
+}
+
+.ListContainer {
+  display: flex;
+  flex-direction: column;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    margin-left: 18px;
+  }
+}
+
+.ListTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: rgba(248, 213, 161, 0.9);
+  margin-bottom: 8px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+}
+
+.ListParagraph {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.75);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+.ListItem {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 203px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 14px;
+    max-width: 320px;
+    flex-direction: row;
+  }
+}
+
+/////////////////////////////////about////////////////////////////////
+
+.CarouselContainer {
+  max-width: 1040px;
+  background: transparent;
+  padding: 0rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* overflow-x: hidden; */
+
+  margin-left: 32px;
+  &:first-of-type {
+    margin-left: 0px;
+  }
+
+  margin-bottom: 80px;
+
+  //remove scrollbar
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    touch-action: pan-x;
+    justify-content: initial;
+    margin-bottom: 8px;
+  }
+}
+
+.CarouselMobileScrollWindow {
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    min-width: 120%;
+  }
+}
+
+.CarouselItem {
+  background: transparent;
+
+  border-radius: 3px;
+  max-width: 196px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 124px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 32px;
+    min-width: 120px;
+    background: transparent;
+    padding: 4px;
+    align-content: start;
+    scroll-snap-align: start;
+    border-radius: 3px;
+    overflow: visible;
+    position: relative;
+    height: fit-content;
+
+    opacity: 1;
+  }
+}
+
+.CarouselItemTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  display: flex;
+  /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0.88) 30.15%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
+.CarouselItemImg {
+  margin-left: 21px;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  width: 100%;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    -webkit-mask-image: none;
+    margin-left: 16px;
+    overflow: visible;
+  }
+}
+
+.LogCard {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 400px;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.Imgg {
+  width: 200px;
+  height: 264px;
+  object-fit: cover;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 150px;
+    height: 198px;
+  }
+}
+
+.Blogshot {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 24px 0 40px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    gap: 16px;
+    margin: 20px 0 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 450px;
+    margin: 24px auto;
+  }
+}
+
+.shot {
+  background: transparent;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  margin-bottom: 40px;
+  padding: 5px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    height: 135px;
+    padding: 16px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    height: 200px;
+    padding: 5px;
+    width: 100%;
+
+    :nth-child(2n) {
+      grid-row: 2 2;
+    }
+  }
+}
+
+.shot img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    height: 40%;
+    padding: 0px;
+    border-radius: 10px;
+
+    :nth-child(2n) {
+      grid-row: 2, 2;
+    }
+  }
+}
+
+.blogpics {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  width: 400px;
+  padding: 10px;
+  height: 264px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 300px;
+    height: 198px;
+  }
+}
+
+.CarouselItemText {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.99);
+  padding-right: 16px;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 32px;
+  }
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 0;
+  }
+}
+
+.CarouselButtons {
+  width: 288px;
+
+  display: none;
+  visibility: hidden;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    visibility: visible;
+    margin-bottom: 48px;
+  }
+}
+
+.CarouselButton {
+  box-sizing: border-box;
+  background: none;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 4px;
+  opacity: 1;
+  transform: scale(1.6);
+  // transform: ${(props) => props.active === props.index ? `scale(1.6)` : `scale(1)`};
+
+  &:focus {
+    outline: none;
+  }
+}
+.CarouselButtonDot {
+  background-color: yellow;
+  border-radius: 10px;
+  margin: auto;
+  width: 3px;
+  height: 3px;
+}
+
+////////////////////////////////    BLOG     ///////////////////////////////////////////////////////////
+
+/////////////////////////////////////////  CONTACT  //////////////////////////////////
+
+.FooterWrapper {
+  width: calc(100vw - 96px);
+  max-width: 1040px;
+  padding: 2rem 48px 40px;
+  margin: 1rem auto;
+  margin-bottom: 20px;
+  box-sizing: content-box;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 10px 16px 48px;
+    margin-bottom: 20px;
+    width: calc(100vw - 32px);
+  }
+}
+
+.ContactText {
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 17px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.ContactList {
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  color: rgba(248, 213, 161, 0.9);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 670px;
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 12 px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 5px;
+    color: rgba(248, 213, 161, 0.9);
+  }
+}
+
+.ContactList ol li {
+  max-width: 800px;
+  font-size: 20px;
+  display: inline;
+
+  flex-direction: row;
+  line-height: 40px;
+  font-weight: 300;
+
+  color: rgba(248, 213, 161, 0.9);
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    max-width: 670px;
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 12 px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 5px;
+    color: rgba(248, 213, 161, 0.9);
+  }
+}
+
+.ContactList ol li span {
+  color: #fff;
+}
+
+.LinkItem {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+  transition: 0.3s ease;
+  position: relative;
+  left: 0;
+
+  &:hover {
+    color: #fff;
+    left: 6px;
+  }
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 30px;
+    line-spacing: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.SocialIconsContainer {
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.CompanyContainer {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-right: auto;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px;
+    align-items: center;
+  }
+}
+
+.Slogan {
+  color: rgba(248, 213, 161, 0.9);
+  min-width: 280px;
+  display: flex;
+  float: right;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 1rem;
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    line-height: 22px;
+    font-size: 14px;
+    min-width: 100px;
+  }
+}
+
+.SocialContainer {
+  display: flex;
+  align-items: center;
+
+  $breakpoint-md: 640px;
+  @media (max-width: $breakpoint-md) {
+    justify-content: center;
+    padding-right: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+.LinkList {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(85px, 220px));
+  gap: 40px;
+  padding: 40px 0 28px;
+
+  $breakpoint-lg: 1024px;
+  @media (max-width: $breakpoint-lg) {
+    padding: 32px 0 16px;
+  }
+
+  $breakpoint-md: 768px;
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    padding: 32px 0 16px;
+    gap: 16px;
+  }
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    padding: 32px 4px 16px;
+    gap: 5px;
+  }
+}
+
+.LinkColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  width: 100%;
+}
+
+.LinkTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+
+  $breakpoint-sm: 640px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+.SocialIcons {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    background-color: none;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+.instagram {
+  transition: 0.3s ease;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    background-color: none;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+.Footer {
+  position: relative;
+  bottom: 0;
+  font-size: 15px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
